@@ -12,4 +12,4 @@ mix local.rebar --force
 mix deps.get --force --only prod
 mix compile --force
 
-elixir --erl "+K true" --detached  -pa _build/prod/consolidated -S mix phoenix.server
+elixir --detached --erl "+K true +stbt db +sbwt very_long +swt very_low" -pa _build/prod/consolidated -S mix phoenix.server

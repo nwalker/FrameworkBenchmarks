@@ -10,4 +10,4 @@ mix local.hex --force
 mix deps.get --force
 mix compile --force
 
-elixir --detached --no-halt -S mix
+elixir --detached --no-halt --erl "+K true +stbt db +sbwt very_long +swt very_low" -S mix

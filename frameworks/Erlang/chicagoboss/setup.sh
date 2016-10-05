@@ -8,4 +8,4 @@ rm -rf deps/* ebin/*
 rebar get-deps
 rebar compile
 
-erl -pa ebin deps/*/ebin +sbwt very_long +swt very_low -config boss -s boss -sname chicagoboss -noshell -detached
+erl -pa ebin deps/*/ebin +K true +stbt db +sbwt very_long +swt very_low -config boss -s boss -sname chicagoboss -noshell -detached
